@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MicroDSI - Inicio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <h1>M2-S10: Identificación de Procesos</h1>
+        <nav>
+            <a href="index.html">Inicio</a> | <a href="feed.html">Lecciones</a> | <a href="lab.html">Laboratorio</a>
+        </nav>
+    </header>
+    <main class="card">
+        <h2>Selecciona tu Track de Trabajo</h2>
+        <p>Elige el área donde vas a identificar procesos hoy:</p>
+        <select id="trackSel" onchange="saveTrack()">
+            <option value="ITSM">ITSM (Soporte Técnico)</option>
+            <option value="HR">HR (Recursos Humanos)</option>
+            <option value="Procurement">Procurement (Compras)</option>
+        </select>
+        <br><br>
+        <a href="feed.html" class="btn">Comenzar Aprendizaje</a>
+    </main>
+    <script src="assets/app.js"></script>
+</body>
+</html>

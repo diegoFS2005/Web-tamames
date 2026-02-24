@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MicroDSI - Laboratorio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <nav><a href="index.html">Volver al Inicio</a></nav>
+        <h1>Laboratorio de Procesos</h1>
+    </header>
+
+    <section class="card">
+        <h2>1. Priorización de Procesos</h2>
+        <p>Calcula el Score usando: <strong>(Impacto x 2) - Esfuerzo + Riesgo</strong></p>
+        <table>
+            <tr>
+                <th>Proceso (Verbo + Objeto)</th>
+                <th>Imp (1-5)</th>
+                <th>Esf (1-5)</th>
+                <th>Ries (1-5)</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Ej: Gestionar alta"></td>
+                <td><input type="number" id="imp1" value="0"></td>
+                <td><input type="number" id="esf1" value="0"></td>
+                <td><input type="number" id="rie1" value="0"></td>
+                <td id="score1">0</td>
+            </tr>
+        </table>
+        <button class="btn" onclick="calcular()">Calcular Ganador</button>
+    </section>
+
+    <section class="card">
+        <h2>2. SIPOC del Ganador</h2>
+        <div class="sipoc-grid">
+            <input type="text" placeholder="Supplier">
+            <input type="text" placeholder="Input">
+            <textarea placeholder="Process (4-6 pasos)"></textarea>
+            <input type="text" placeholder="Output">
+            <input type="text" placeholder="Customer">
+        </div>
+        <button class="btn" onclick="exportar()">Descargar .MD</button>
+    </section>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
